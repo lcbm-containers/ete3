@@ -10,7 +10,7 @@ RUN micromamba install -y \
     -c conda-forge \
     -c bioconda \
     python=3.12 \
-    ete4=3.1.3 && \
+    ete3=3.1.3 && \
     micromamba clean -afy
 
 WORKDIR /workdir
