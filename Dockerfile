@@ -11,8 +11,7 @@ RUN micromamba install -y \
     -c bioconda \
     -c etetoolkit \
     python=3.11 \
-    ete3=3.1.3 \
-    ete_toolchain && \
+    ete3=3.1.3 && \
     micromamba clean -afy
 
 WORKDIR /workdir
