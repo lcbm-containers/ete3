@@ -10,6 +10,8 @@ RUN micromamba install -y \
     -c conda-forge \
     -c bioconda \
     python=3.12 \
+    etetoolkit \
+    ete_toolchain \
     ete3=3.1.3 && \
     micromamba clean -afy
 
