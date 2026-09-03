@@ -9,10 +9,10 @@ RUN apt-get update && \
 RUN micromamba install -y \
     -c conda-forge \
     -c bioconda \
-    python=3.12 \
-    etetoolkit \
-    ete_toolchain \
-    ete3=3.1.3 && \
+    -c etetoolkit \
+    python=3.11 \
+    ete3=3.1.3 \
+    ete_toolchain && \
     micromamba clean -afy
 
 WORKDIR /workdir
